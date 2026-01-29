@@ -1,0 +1,49 @@
+# ===============================
+# Microchip / Atmel Studio files
+# ===============================
+
+.vs/
+Debug/ 
+Release/
+x64/
+build/
+obj/
+
+*.o
+*.d
+*.elf
+*.hex 
+*.map
+*.lss
+*.eep
+*.srec
+*.xml
+
+# ===============================
+# User-specific & temporary files
+# ===============================
+
+*.user
+*.userprefs
+*.suo
+*.cache
+*.log
+
+# ===============================
+# Proteus temporary files
+# ===============================
+
+*.DSN~
+*.PWI
+*.LCK
+*.TMP
+*.bak
+*.workspace
+*pdsbak
+
+# ===============================
+# OS-specific files
+# ===============================
+
+Thumbs.db
+.DS_Store
