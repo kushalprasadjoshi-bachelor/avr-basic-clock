@@ -1,0 +1,63 @@
+\chapter{INTRODUCTION}%
+\label{chap:introduction}
+
+Embedded systems play a crucial role in modern electronic devices by integrating hardware and 
+software to perform dedicated functions efficiently. Microcontroller-based systems are widely 
+used in applications such as digital clocks, timers, control systems, and monitoring devices 
+due to their low cost, reliability, and real-time processing capabilities. This project focuses 
+on the design and implementation of a digital clock using an AVR microcontroller and 
+seven-segment displays to demonstrate fundamental embedded system concepts.
+
+\section{BACKGROUND AND MOTIVATION}
+Digital clocks are one of the most common real-time embedded applications and serve as an 
+excellent platform for learning microcontroller programming. The motivation behind this project 
+is to gain practical exposure to embedded system design by interfacing a microcontroller with 
+external display hardware and implementing precise time measurement using internal timers.
+
+The AVR ATmega32 microcontroller provides built-in hardware timers, interrupt handling 
+mechanisms, and configurable I/O ports, making it suitable for implementing timing-based 
+applications. By developing a digital clock that displays time in minutes and seconds format, 
+this project aims to strengthen understanding of timer configuration, interrupt-driven 
+programming, and display multiplexing techniques.
+
+\section{PROBLEM STATEMENT}
+The objective of this project is to design and implement a digital clock capable of accurately 
+displaying time in \textbf{MM:SS format}\nomenclature{MM:SS}{Minutes:Seconds} using an 
+AVR ATmega32 microcontroller. The system must 
+generate precise one-second intervals, update time values reliably, and display the output 
+using four seven-segment displays while efficiently utilizing the available microcontroller I/O 
+pins.
+
+\section{PROJECT OBJECTIVES}
+The main objectives of the project are:
+\begin{itemize}
+    \item To design a digital clock using the AVR ATmega32 microcontroller.
+    \item To generate accurate one-second timing using hardware timers.
+    \item To implement interrupt-driven time updating for reliable operation.
+    \item To interface and control multiple seven-segment displays using multiplexing.
+    \item To simulate and verify the system using Proteus software.
+    \item To develop and test the embedded C program using Microchip Studio.
+\end{itemize}
+\enumitemEndSpacing{}
+
+\section{SCOPE OF THE PROJECT}
+The scope of this project is limited to the design and simulation of a digital clock displaying 
+minutes and seconds using four seven-segment displays. The system uses the internal RC 
+oscillator of the microcontroller for timing purposes and does not include external time 
+calibration mechanisms.
+
+The project does not cover advanced features such as hour display, alarm functionality, 
+real-time clock (RTC)\nomenclature{RTC}{Real-Time Clock} modules, or power optimization 
+techniques. However, the design can be 
+extended in the future to incorporate additional features and hardware components.
+
+\section{SIGNIFICANCE OF THE PROJECT}
+This project is significant as it provides a practical understanding of real-time embedded 
+system design using AVR microcontrollers. It demonstrates the effective use of timers, 
+interrupts, and I/O port manipulation in a real-world application.
+
+Additionally, the project serves as a foundational learning exercise for students studying 
+embedded systems, as the concepts applied in this work are directly transferable to more 
+complex applications such as industrial timers, digital control systems, and consumer 
+electronic devices.
+

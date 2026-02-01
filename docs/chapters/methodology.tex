@@ -1,0 +1,62 @@
+\chapter{METHODOLOGY}%
+\label{chap:methodology}
+
+This chapter describes the methodology adopted for the design and implementation of the 
+digital clock system. It explains the overall development approach, the system architecture, 
+and the sequence of steps followed to achieve the project objectives.
+
+\section{OVERVIEW OF PROPOSED METHODOLOGY}
+
+The proposed methodology follows a systematic approach to develop a microcontroller-based 
+digital clock using the AVR ATmega32. The design process begins with requirement analysis, 
+followed by hardware and software design, implementation, and testing.
+
+The system is developed using an interrupt-driven approach to ensure accurate time measurement. 
+Hardware timers are configured to generate precise one-second intervals, and multiplexing is 
+employed to control multiple seven-segment displays efficiently. Simulation using Proteus is 
+performed to validate the design before final testing.
+
+\section{WATERFALL DEVELOPMENT MODEL}
+
+The Waterfall development model is adopted for this project due to its structured and 
+sequential nature, which is suitable for small-scale embedded system applications with 
+well-defined requirements.
+
+The stages of the Waterfall model used in this project are as follows:
+\begin{itemize}
+    \item \textbf{Requirement Analysis}: Identification of functional and non-functional requirements of the digital clock system.
+    \item \textbf{System Design}: Design of hardware connections and software logic, including timer configuration and display multiplexing.
+    \item \textbf{Implementation}: Development of embedded C code using Microchip Studio and creation of the circuit in Proteus.
+    \item \textbf{Testing}: Verification of correct time counting and display operation through simulation.
+    \item \textbf{Maintenance}: Provision for future modifications and enhancements.
+\end{itemize}
+\enumitemEndSpacing{}
+
+The Waterfall model ensures clear documentation at each stage and simplifies project management, 
+making it appropriate for academic projects.
+
+\section{ARCHITECTURE OF PROPOSED SYSTEM}
+
+The architecture of the proposed digital clock system consists of three main components: 
+the microcontroller unit, the display unit, and the power supply.
+
+The AVR ATmega32 microcontroller serves as the core processing unit of the system. It is 
+responsible for generating time intervals using Timer1 configured in Clear Timer on Compare (CTC) 
+mode and handling interrupts to update time variables. The microcontroller also controls the 
+multiplexing of four seven-segment displays through its I/O ports.
+
+The display unit comprises four common-cathode seven-segment displays arranged to represent 
+minutes and seconds in MM:SS format. Segment lines are connected to a common port through 
+current-limiting resistors, while individual digit enable lines are used to activate each 
+display sequentially.
+
+The power supply provides a regulated 5V DC voltage required for the operation of the 
+microcontroller and display unit. Figure~\ref{fig:system_architecture} illustrates the 
+overall architecture of the proposed system.
+
+\begin{figure}
+\centering
+\includegraphics[width=\figWidth{}]{system_architecture.png}
+\caption{System Architecture of Digital Clock System}%
+\label{fig:system_architecture}
+\end{figure}

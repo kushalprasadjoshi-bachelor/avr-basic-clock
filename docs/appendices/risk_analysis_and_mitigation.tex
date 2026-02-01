@@ -1,0 +1,37 @@
+\chapter{RISK ANALYSIS AND MITIGATION}%
+\label{chap:risk_analysis_and_mitigation}
+
+Risk analysis is the process of identifying potential issues that may affect the successful 
+completion of a project and defining strategies to mitigate their impact. In embedded system 
+projects, risks may arise from both hardware and software components.
+
+Table~\ref{tab:risk_analysis} summarizes the identified risks associated with the \textbf{\Project{}} 
+project along with their mitigation strategies.
+
+\section{RISK, IMPACT AND MITIGATION STRATEGY}
+
+\begin{table}
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|p{6.5cm}|}
+\hline
+\textbf{Risk} & \textbf{Impact} & \textbf{Mitigation Strategy} \\
+\hline
+Incorrect timer configuration & Inaccurate time display & Careful calculation of timer values and verification using simulation \\
+\hline
+Display flickering due to improper multiplexing & Poor visual output & Adjusting refresh delay and ensuring correct digit enable logic \\
+\hline
+Internal oscillator inaccuracy & Time drift over long duration & Acceptable tolerance for academic project and proper prescaler selection \\
+\hline
+Hardware wiring errors & System malfunction & Verification of circuit connections using Proteus before testing \\
+\hline
+Software bugs or logic errors & Unexpected system behavior & Incremental testing and use of interrupt-driven design \\
+\hline
+\end{tabular}
+\caption{Risk Analysis and Mitigation Strategies}%
+\label{tab:risk_analysis}
+\end{table}
+
+\section{SUMMARY}
+The identified risks were effectively managed through careful design, simulation-based testing, 
+and incremental debugging. As a result, the project was completed successfully with reliable 
+performance.

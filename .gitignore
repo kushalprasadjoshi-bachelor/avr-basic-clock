@@ -47,3 +47,46 @@ obj/
 
 Thumbs.db
 .DS_Store
+
+# =======================================
+# LaTeX Temporary / Build Files
+# =======================================
+
+# Core auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.brf
+*.dvi
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.log
+*.nlo
+*.nls
+*.glsdefs
+
+# LaTeX build directories
+build/
+out/
+latex-build/
+
+
+# =========================================
+# LaTeX Editors
+# =========================================
+
+# TeXstudio
+*.txss
+*.txsauto

@@ -1,0 +1,23 @@
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Time measurement and display systems are fundamental components in many embedded applications. 
+This project presents the design and implementation of a digital clock that displays time in 
+\textbf{minutes and seconds (MM:SS)} format using an \textbf{AVR ATmega32 microcontroller} and 
+\textbf{four multiplexed seven-segment displays}. The system is developed using the 
+\textbf{C programming language} and simulated in \textbf{Proteus}, with code development carried 
+out in \textbf{Microchip Studio}.
+
+The clock utilizes \textbf{Timer1 in Clear Timer on Compare 
+(CTC\nomenclature{CTC}{Clear Timer on Compare}) mode} to generate precise 
+one-second time intervals using the internal RC\nomenclature{RT}{Resistor Capacitor} 
+oscillator of the microcontroller. An 
+interrupt-driven approach is employed to update time variables accurately, while display 
+multiplexing is used to efficiently control multiple seven-segment displays with limited 
+I/O\nomenclature{I/O}{Input Output} 
+pins. The proposed system demonstrates effective use of timers, interrupts, and port manipulation 
+in AVR-based\nomenclature{AVR}{Advanced Virtual RISC} embedded system design. 
+This project serves as a practical implementation for 
+understanding real-time embedded systems, timer configuration, and display interfacing 
+techniques.
+

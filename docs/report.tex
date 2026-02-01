@@ -1,0 +1,77 @@
+% ==============================================================================================
+% DOCUMENT INFORMATION
+% ----------------------------------------------------------------------------------------------
+% Title      : AVR Basic Clock
+% Document   : Embedded System Project Report
+% Author     : Kushal Prasad Joshi
+% Institution: Cosmos College of Management and Technology, Pokhara University
+% Department : Department of Information Communication and Technology (ICT)
+% Course     : Bachelor of Engineering in Computer Engineering, Semester V
+% Purpose    : Submission of project report for evaluation
+% Created    : Janaury 31, 2026
+% ==============================================================================================
+
+\documentclass[12pt, a4paper]{report} % Document class
+
+% ---------------------- DOCUMENT SETUP ------------------------------
+% Define document-specific metadata
+\newcommand{\DocumentType}{Report}
+\newcommand{\SubmissionDate}{February 1, 2026}
+
+% Include document preamble imports, macros, settings and configurations
+\input{./configurations/preamble}
+% ----------------------------------------------------------------------------------------------
+
+% ===============================================================================================
+% MAIN DOCUMENT
+% -----------------------------------------------------------------------------------------------
+\begin{document}
+\input{./components/title_page} % Title page
+
+% ------------------- FRONT MATTERS ---------------------------------
+% Set page numbering to roman numerals for front matter
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{2}
+
+\input{./components/abstract} % Abstract
+\input{./components/preface} % Preface
+\input{./components/acknowledgement} % Acknowledgement
+
+\input{./configurations/contents} % Table of Contents, Figures, Tables
+% -----------------------------------------------------------------------------------------------
+
+% ------------------- MAIN CONTENTS ---------------------------------
+% Set page numbering to arabic numerals (right-aligned) for main content
+\clearpage
+\pagenumbering{arabic}
+\input{./configurations/mainbody_setup}
+\pagestyle{fancy}
+
+\include{./chapters/introduction}
+\include{./chapters/literature_review}
+\include{./chapters/requirement_analysis}
+\include{./chapters/methodology}
+\include{./chapters/time_schedule}
+\include{./chapters/conclusion_and_future_work}
+% ------------------------------------------------------------------------------------------------
+
+% ------------------- BACK MATTERS ---------------------------------
+% Supress page numbering for back matter
+\clearpage
+\pagenumbering{gobble}
+\pagestyle{plain}
+
+% Appendices
+\appendix
+\include{./appendices/risk_analysis_and_mitigation}
+\include{./appendices/technical_details}
+
+% Glossary
+\include{./appendices/glossary}
+
+\addcontentsline{toc}{chapter}{REFERENCES} % Add "REFERENCES" to TOC
+\bibliography{./configurations/references} % References
+
+\end{document}
+% ===============================================================================================

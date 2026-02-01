@@ -1,0 +1,36 @@
+\chapter{LITERATURE REVIEW}%
+\label{chap:literature_review}
+
+Several studies and projects have explored the design and implementation of digital clocks and 
+time-based embedded systems using microcontrollers. These works primarily focus on accurate time 
+generation, efficient display control, and reliable system operation.
+
+Microcontroller-based digital clocks are commonly implemented using hardware timers and 
+interrupt mechanisms. According to Mazidi et al.~\cite{mazidi2014avr}, AVR microcontrollers 
+provide flexible timer modules that can be configured in various modes, including Clear Timer 
+on Compare (CTC) mode, which is suitable for precise time interval generation. The use of 
+interrupts ensures that timing accuracy is maintained independently of the main program 
+execution.
+
+Seven-segment displays are widely used in embedded applications due to their simplicity, low 
+cost, and ease of interfacing. Barret and Pack~\cite{barret2012avr} describe multiplexing as an 
+efficient technique for controlling multiple seven-segment displays using a limited number of 
+I/O pins. By rapidly switching between displays, multiplexing creates the illusion of continuous 
+illumination while reducing hardware complexity.
+
+Several embedded system designs utilize internal oscillators to reduce external component 
+count and simplify circuit design. As discussed by the Atmel datasheet~\cite{atmega32datasheet}, 
+the internal RC oscillator of the ATmega32 microcontroller is suitable for applications where 
+ultra-high timing precision is not critical, such as basic digital clocks and timers.
+
+Simulation tools such as Proteus have been extensively used for validating embedded system 
+designs before hardware implementation. Proteus allows real-time simulation of 
+microcontroller-based circuits, enabling developers to test both firmware and hardware 
+interaction~\cite{proteus}. Similarly, Microchip Studio provides a robust development 
+environment for AVR microcontrollers, supporting embedded C programming, debugging, 
+and code optimization~\cite{microchipstudio}.
+
+Based on the reviewed literature, it is evident that implementing a digital clock using AVR 
+microcontrollers, hardware timers, interrupts, and multiplexed seven-segment displays is a 
+well-established and reliable approach. This project follows proven design methodologies while 
+serving as a practical learning platform for embedded system development.

@@ -1,0 +1,34 @@
+\chapter{CONCLUSION AND FUTURE WORK}%
+\label{chap:conclusion}
+
+\section{CONCLUSION}
+This project successfully demonstrated the design and implementation of a digital clock 
+displaying time in minutes and seconds (MM:SS) using the AVR ATmega32 microcontroller. The 
+system was developed using embedded C programming and verified through simulation in Proteus, 
+with code development carried out in Microchip Studio.
+
+Accurate time measurement was achieved by configuring Timer1 in Clear Timer on Compare (CTC) 
+mode and utilizing interrupt-driven programming. The use of multiplexing enabled efficient 
+control of four seven-segment displays while minimizing the number of required I/O pins. The 
+system operated reliably and met all the defined functional and non-functional requirements.
+
+Through this project, practical knowledge of AVR microcontroller architecture, timer 
+configuration, interrupt handling, and display interfacing was gained. The project served as 
+an effective learning platform for understanding real-time embedded system concepts and their 
+practical applications.
+
+\section{FUTURE WORK}
+Although the current system fulfills its intended objectives, several enhancements can be 
+incorporated in future developments to improve functionality and performance. Possible future 
+extensions of the project include:
+\begin{itemize}
+    \item Extending the display format to include hours (HH:MM:SS).
+    \item Integrating a Real-Time Clock (RTC) module for improved time accuracy.
+    \item Adding user input buttons for time setting and reset functionality.
+    \item Implementing alarm or timer features.
+    \item Deploying the system on physical hardware for real-world testing.
+    \item Optimizing power consumption for battery-operated applications.
+\end{itemize}
+\enumitemEndSpacing{}
+
+These enhancements would make the system more versatile and suitable for a wider range of real-time embedded applications.
